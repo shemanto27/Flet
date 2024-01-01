@@ -21,7 +21,7 @@ def main(page: ft.Page):
             page.clean()
             print_name.controls.append(ft.Text(f"Hello {user_name.value}"))
             page.add(print_name)
-            
+            page.update()
 
 
     page.add(
