@@ -1,4 +1,5 @@
 import flet as ft 
+import math
 
 def main(page: ft.Page):
     page.theme_mode = "light"
@@ -39,11 +40,17 @@ def main(page: ft.Page):
             offset=ft.Offset(0, 0),
             blur_style=ft.ShadowBlurStyle.OUTER,)
         )
-
     
-
     r1 = ft.Row(controls=[c1],)
 
+    L = 10
+    V = 10
+    roh = 1.2
+    A = math.pi*L**2
+    P = .5*roh*A*V**3
+    print(P)
+    
+    
     page.add(
         r1,
         start_button,
